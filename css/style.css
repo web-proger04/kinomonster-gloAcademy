@@ -1,0 +1,771 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+   font-family: 'Roboto';
+   color: #fff;
+   background-color: #17161B;
+}
+
+.grid-init {
+   
+} 
+
+.grid {
+   display: grid;
+
+   grid-template-areas: 
+   "my-header my-header my-header"
+   "my-aside my-main my-main"
+   "my-aside my-main my-main";
+
+   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+   gap: 30px 0px; /* расстояние по вертикали и горизонтали */
+}
+
+.grid-init {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0px 24px 40px;
+}
+
+.box-init {
+
+}
+
+/* header */
+.header {
+   grid-area: my-header;
+   background: rgba(255, 255, 255, 0.01);
+   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
+   padding: 20px 0;
+}
+
+.header__wrap {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.header__logo {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 75px;
+   color: #FFFFFF;
+   margin-right: 70px;
+}
+
+.header__menu {
+   margin-right: 92px;
+}
+
+.menu {
+}
+
+.memu__list {
+   display: flex;
+}
+
+.menu__item {
+}
+
+.menu__item:not(:last-child) {
+   margin-right: 25px;
+}
+
+.menu__link {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   color: #FFFFFF;
+}
+
+.menu__link_active {
+   border-bottom: 3px solid #fff;
+}
+
+.header__find {
+   margin-right: 39px;
+}
+
+.find {
+   flex: 0 1 23.7%;
+   display: flex;
+}
+
+.find__input {
+   width: 100%;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   padding: 10px 0px 10px 10px;
+   background: rgba(255, 255, 255, 0.08);
+   border-radius: 8px 0px 0px 8px;
+}
+
+.find__input::placeholder {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+}
+
+.find__button {
+   background-color: rgba(255, 255, 255, 0.08);
+   border-radius: 0px 8px 8px 0px;
+   padding: 9px 15px;
+   cursor: pointer;
+}
+
+.find__button img {
+   width: 20px;
+   height: 20px;
+   object-fit: cover;
+}
+
+.header__date {
+   margin-right: 86px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.header__hour {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   margin-bottom: 4px;
+}
+
+.header__days {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+}
+
+.header__personal {
+   width: 60px;
+   height: 60px;
+   flex-shrink: 0;
+   cursor: pointer;
+}
+
+.header__personal img{
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   outline: 4px solid #fff;
+}
+/* header */
+
+
+/* main */
+.main {
+   grid-area: my-main;
+   margin-top: 50px;
+}
+
+/* films */
+.films {
+}
+
+.films__trailer-films {
+   margin-bottom: 35px;
+   height: 202px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/films/spider-man.png') center / cover no-repeat;
+}
+
+.trailer-films {
+   display: flex;
+   flex-direction: column;
+   padding: 19px 0 19px 19px;
+   border-radius: 16px;
+   position: relative;
+}
+
+.trailer-films__views {
+   flex: 1 1 auto;
+}
+
+.views {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+}
+
+.trailer-films__name {
+}
+
+.name {
+}
+
+.name__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   color: #FFFFFF;
+   margin-bottom: 5px;
+}
+
+.name__date {
+   display: block;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+}
+
+.trailer-films__play-button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.play-button {
+   flex-shrink: 0;
+   width: 81px;
+   height: 81px;
+   background-color: rgba(255, 255, 255, 0.07);
+   backdrop-filter: blur(16px);
+   border-radius: 50%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.play-button__click {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+}
+
+.play-button__click img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.films__viewing-films {
+   margin-bottom: 35px;
+} 
+
+.viewing-films {
+
+}
+
+.viewing-films__header-film {
+   margin-bottom: 35px;
+}
+
+.header-film {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-film__subject {
+   display: flex;
+}
+
+.header-film__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   margin-right: 20px;
+}
+
+.header-film__text {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: rgba(255, 255, 255, 0.2);
+   opacity: 0.7;
+}
+
+.header-film__viewing {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: rgba(255, 255, 255, 0.2);
+   background-image: url('../img/films/next.svg');
+   background-repeat: no-repeat;
+   background-position: right center;
+   padding-right: 15px;
+}
+
+.viewing-films__row  {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.viewing-films__item-films {
+   flex: 0 1 46%;
+   height: 251px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/films/hills.png') center / cover no-repeat;
+}
+
+.viewing-films__item-films .item-films__footer .item-films__name .name__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 18px;
+   color: #FFFFFF;
+   margin-bottom: 2px;
+}
+
+.viewing-films__item-films .item-films__footer .item-films__name .name__date {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 12px;
+   color: #FFFFFF;
+}
+
+.item-films {
+   display: flex;
+   align-items: flex-end;
+   border-radius: 16px;
+   position: relative;
+}
+
+.item-films__trending {
+   position: absolute;
+   top: 19px;
+   left: 19px;
+   max-width: 140px;
+   padding: 5px 15px;
+   background: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(16px);
+   border-radius: 16px;
+}
+
+.item-films__footer {
+   width: 100%;
+   padding: 15px 19px;
+   background: rgba(255, 255, 255, 0.07);
+   backdrop-filter: blur(16px);
+   border-radius: 16px;
+   display: flex;
+   align-items: center;
+}
+
+.item-films__play-button {
+   margin-right: 15px;
+}
+
+.play-button_medium {
+   width: 30px;
+   height: 30px;
+}
+
+.play-button__click_medium {
+   width: 11.11px;
+   height: 11.11px;
+}
+
+.item-films__name {
+   margin-right: auto;
+}
+
+.item-films__time {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #000000;
+   padding: 4px 12px;  
+   background-color: #FFFFFF;
+   border-radius: 16px;
+}
+
+.popular-movies__header-film {
+   margin-bottom: 35px;
+}
+
+.popular-movies__row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.popular-movies__item-films {
+   flex: 0 1 30%;
+   height: 192px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/films/netflix.png') center / cover no-repeat;
+}
+
+.play-button_small {
+   width: 18px;
+   height: 18px;
+}
+
+.play-button__click_small {
+   width: 6.67px;
+   height: 6.67px;
+}
+
+.popular-movies__item-films .item-films__footer {
+   padding: 8px 19px;
+}
+
+.popular-movies__item-films .item-films__footer .item-films__name .name__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 12px;
+   color: #FFFFFF;
+   margin-bottom: 2px;
+}
+
+.popular-movies__item-films .item-films__footer .item-films__name .name__date {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 8px;
+   line-height: 9px;
+   color: #FFFFFF;
+}
+
+
+.item-films__raiting {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 12px;
+   color: #FFFFFF;
+   background-image: url('../img/films/star.svg');
+   background-repeat: no-repeat;
+   background-position: left center;
+   padding-left: 14px;
+}
+/* films */
+
+/* main */
+
+
+/* aside */
+.aside {
+   grid-area: my-aside;
+   margin-right: 59px;
+   position: relative;
+}
+
+.aside::after {
+   content: url('../img/aside/aside-decor.svg');
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   width: 22px;
+   height: 26px;
+   border-radius: 20px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(11px, 107px);
+   cursor: pointer;
+}
+
+.aside__top {
+   padding-top: 50px;
+   padding-bottom: 40px;
+   border-right: 1px solid #1C1B1F;
+}
+
+.aside__header {
+   margin-bottom: 26px;
+   padding-right: 24px;
+}
+
+.header-aside {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-aside__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+}
+
+.header-aside__sort {
+   display: flex;
+   align-items: center;
+}
+
+.header-aside__text {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: rgba(255, 255, 255, 0.4);
+   margin-right: 15px;
+}
+
+.header-aside__select {
+   display: flex;
+   align-items: center;
+}
+
+.header-aside__day {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+   margin-right: 4px;
+}
+
+.header-aside__arrows {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.header-aside__arrow {
+   display: block;
+   width: 6px;
+   height: 6px;
+}
+
+.header-aside__arrows_1 {
+   margin-bottom: 2px;
+   cursor: pointer;
+}
+
+.header-aside__arrows_2 {
+   cursor: pointer;
+}
+
+.aside__row {
+   padding-right: 24px;
+}
+
+.aside__trailer-films {
+   height: 226px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/aside/batman.png') center / cover no-repeat;
+}
+
+.aside__trailer-films:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.aside__favourite-genres {
+   margin-left: -24px;
+   padding: 24px 0 40px 24px;
+   background-color: rgba(255, 255, 255, 0.02);
+}
+
+.favourite-genres {
+}
+
+.favourite-genres__header {
+   margin-bottom: 30px;
+}
+
+.favourite-genres__header:after {
+   content: '';
+   display: block;
+   width: 65px;
+   height: 1px;
+   margin-top: 30px;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.favourite-genres__title {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   margin-bottom: 20px;
+}
+
+.favourite-genres__row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px -15px;
+   max-width: 290px;
+}
+
+.favourite-genres__item {
+   margin: 10px 15px;
+   padding: 5px 10px;
+   border-radius: 30px;
+   background-color: #2B2A2F;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+}
+
+.favourite-genres__item_purple {
+   background-color: #8066F6;
+}
+
+.favourite-genres__item_orange {
+   background-color: #E1784F;
+}
+
+.favourite-genres__item_blue {
+   background-color: #63CFE1;
+}
+
+.favourite-genres__footer {
+}
+
+.favourite-genres__add {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.favourite-genres__button {
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   padding: 1px 5px;
+   background-color: #2B2A2F;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+   margin-right: 5px;
+   cursor: pointer;
+}
+
+.favourite-genres__text {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+}
+/* aside */
+
+/* modal */
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   overflow-x: hidden;
+   overflow-y: auto;
+   z-index: 1000;
+   padding: 30px 0;
+   border-radius: 30px;
+   display: none;
+}
+
+.modal__inner {
+   width: 100%;
+   height: 100%;
+   max-width: 800px;
+   max-height: 450px;
+}
+
+.modal__inner iframe {
+   border-radius: 30px;
+}
+
+.modal-batman {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   overflow-x: hidden;
+   overflow-y: auto;
+   z-index: 1000;
+   padding: 30px 0;
+   display: none;
+}
+
+.modal-batman__inner {
+   width: 100%;
+   height: 100%;
+   max-width: 800px;
+   max-height: 450px;
+}
+
+.modal-batman__inner iframe {
+   border-radius: 30px;
+}
+
+.active {
+   display: flex;
+}
+/* modal */

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>cinema</title>
+</head>
+<body>
+ 
+   <!-- обертка для гридов -->
+   <div class="grid-init grid">
+
+      <!-- header -->
+      <header class="header">
+         <div class="header__wrap">
+            <a href="#" class="header__logo">
+               MOVEA
+            </a>
+            <nav class="header__menu menu">
+               <ul class="memu__list">
+                  <li class="menu__item">
+                     <a href="#" class="menu__link menu__link_active">
+                        Movies 
+                     </a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">
+                        TV shows
+                     </a>  
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">
+                        Animations
+                     </a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="#" class="menu__link">
+                        Plans
+                     </a>  
+                  </li>
+               </ul>
+            </nav>
+            <form action="#" class="header__find find" method="get">
+               <input type="text" class="find__input" name="find" placeholder="Search..." required>
+               <button class="find__button">
+                  <img src="img/header/find.svg" alt="find">
+               </button>
+            </form>
+            <div class="header__date">
+               <div class="header__hour">19:55</div>
+               <div class="header__days">March 30</div>
+            </div>
+            <a href="#" class="header__personal">
+               <img src="img/header/avatar.png" alt="Avatar">
+            </a>
+         </div>
+      </header>
+      <!-- header -->
+
+      <!-- aside -->
+      <aside class="aside box-init">
+         <div class="aside__top">
+            <div class="aside__header header-aside">
+               <h3 class="header-aside__title">
+                  New trailers
+               </h3>
+               <div class="header-aside__sort">
+                  <p class="header-aside__text">
+                     Sort By
+                  </p>
+                  <div class="header-aside__select">
+                     <p class="header-aside__day">
+                        Today
+                     </p>
+                     <div class="header-aside__arrows">
+                        <img src="img/aside/arrow-top.svg" alt="Arrow" class="header-aside__arrow header-aside__arrows_1">
+                        <img src="img/aside/arrow-bottom.svg" alt="Arrow" class="header-aside__arrow header-aside__arrows_2">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aside__row">
+               <div class="aside__trailer-films trailer-films">
+                  <p class="trailer-films__views views">
+                     Views 4.5k
+                  </p>
+                  <div class="trailer-films__name name">
+                     <h2 class="name__title">
+                        Batman 2022
+                     </h2>
+                     <time datetime="2021-02" class="name__date">
+                        Dec 2022
+                     </time>                 
+                  </div>
+                  <div class="trailer-films__play-button play-button">
+                     <button class="play-button__click play-button_batman">
+                        <img src="img/films/play.svg" alt="play">
+                     </button>
+                  </div>
+               </div>
+               <div class="aside__trailer-films trailer-films">
+                  <p class="trailer-films__views views">
+                     Views 4.5k
+                  </p>
+                  <div class="trailer-films__name name">
+                     <h2 class="name__title">
+                        Batman 2022
+                     </h2>
+                     <time datetime="2021-02" class="name__date">
+                        Dec 2022
+                     </time>                 
+                  </div>
+                  <div class="trailer-films__play-button play-button play-button_batman">
+                     <button class="play-button__click">
+                        <img src="img/films/play.svg" alt="play">
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="aside__favourite-genres favourite-genres">
+            <div class="favourite-genres__header">
+               <h3 class="favourite-genres__title">
+                  Favourite genres
+               </h3>
+               <ul class="favourite-genres__row">
+                  <li class="favourite-genres__item favourite-genres__item_purple">
+                     Action
+                  </li>
+                  <li class="favourite-genres__item favourite-genres__item_orange">
+                     Western
+                  </li>
+                  <li class="favourite-genres__item favourite-genres__item_purple">
+                     Adventures
+                  </li>
+                  <li class="favourite-genres__item favourite-genres__item_orange">
+                     Drama
+                  </li>
+                  <li class="favourite-genres__item favourite-genres__item_blue">
+                     Comedy
+                  </li>
+               </ul>
+            </div>
+            <div class="favourite-genres__footer">
+               <div class="favourite-genres__add">
+                  <button type="button" class="favourite-genres__button">+</button>
+                  <p class="favourite-genres__text">
+                     Add your favourite genres
+                  </p>
+               </div>
+               <ul class="favourite-genres__row">
+                  <li class="favourite-genres__item">
+                     Drama
+                  </li>
+                  <li class="favourite-genres__item">
+                     Comedy
+                  </li>
+                  <li class="favourite-genres__item">
+                     Action
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </aside>
+      <!-- aside -->
+
+      <!-- main -->
+      <main class="main">
+         <section class="films">
+
+            <!-- films__trailer -->
+            <div class="films__trailer-films trailer-films">
+               <p class="trailer-films__views views">
+                  Views 77k
+               </p>
+               <div class="trailer-films__name name">
+                  <h2 class="name__title">
+                     Spider-Man: No Way Home
+                  </h2>
+                  <time datetime="2021-02" class="name__date">
+                     Feb 2021
+                  </time>                 
+               </div>
+               <div class="trailer-films__play-button play-button play-button_spider-man">
+                  <button class="play-button__click">
+                     <img src="img/films/play.svg" alt="play">
+                  </button>
+               </div>
+            </div>
+            <!-- films__trailer -->
+
+            <!-- films__viewing -->
+            <div class="films__viewing-films viewing-films">
+               <div class="viewing-films__header-film header-film">
+                  <div class="header-film__subject">
+                     <h3 class="header-film__title">
+                        Continue Watching
+                     </h3>
+                     <p class="header-film__text">
+                        4 Movies
+                     </p>
+                  </div>
+                  <a href="#" class="header-film__viewing">
+                     All movies
+                  </a>
+               </div>
+               <div class="viewing-films__row">
+                  <div class="viewing-films__item-films item-films">
+                     <p class="item-films__trending">
+                        #1 Trending 🔥
+                     </p>
+                     <div class="item-films__footer">
+                        <div class="item-films__play-button play-button play-button_medium play-button_spider-man">
+                           <button class="play-button__click play-button__click_medium">
+                              <img src="img/films/play.svg" alt="play">
+                           </button>
+                        </div>
+                        <div class="item-films__name name">
+                           <h3 class="name__title">
+                              Spider-Man: No Way Home
+                           </h3>
+                           <time datetime="2021-02" class="name__date">
+                              Feb 2021
+                           </time>                 
+                        </div>
+                        <time datetime="PT2H30M0S" class="item-films__time">
+                           02:30:00
+                        </time>
+                     </div>
+                  </div>
+                  <div class="viewing-films__item-films item-films">
+                     <p class="item-films__trending">
+                        #1 Trending 🔥
+                     </p>
+                     <div class="item-films__footer">
+                        <div class="item-films__play-button play-button play-button_medium">
+                           <button class="play-button__click play-button__click_medium play-button_spider-man">
+                              <img src="img/films/play.svg" alt="play">
+                           </button>
+                        </div>
+                        <div class="item-films__name name">
+                           <h3 class="name__title">
+                              Spider-Man: No Way Home
+                           </h3>
+                           <time datetime="2021-02" class="name__date">
+                              Feb 2021
+                           </time>                 
+                        </div>
+                        <time datetime="PT2H30M0S" class="item-films__time">
+                           02:30:00
+                        </time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- films__viewing -->
+
+            <!-- films__popular-movies -->
+            <div class="films__popular-movies popular-movies">
+               <div class="popular-movies__header-film header-film">
+                  <div class="header-film__subject">
+                     <h3 class="header-film__title">
+                        Popular movies 2021
+                     </h3>
+                  </div>
+                  <a href="#" class="header-film__viewing">
+                     All movies
+                  </a>
+               </div>
+               <div class="popular-movies__row">
+                  <div class="popular-movies__item-films item-films">
+                     <div class="item-films__footer">
+                        <div class="item-films__play-button play-button play-button_small">
+                           <button class="play-button__click play-button__click_small play-button_spider-man">
+                              <img src="img/films/play.svg" alt="play">
+                           </button>
+                        </div>
+                        <div class="item-films__name name">
+                           <h3 class="name__title">
+                              Spider-Man: No Way Home
+                           </h3>
+                           <time datetime="2021-02" class="name__date">
+                              Feb 2021
+                           </time>                 
+                        </div>
+                        <div class="item-films__raiting">
+                           4,7
+                        </div>
+                     </div>
+                  </div>
+                  <div class="popular-movies__item-films item-films">
+                     <div class="item-films__footer">
+                        <div class="item-films__play-button play-button play-button_small">
+                           <button class="play-button__click play-button__click_small play-button_spider-man">
+                              <img src="img/films/play.svg" alt="play">
+                           </button>
+                        </div>
+                        <div class="item-films__name name">
+                           <h3 class="name__title">
+                              Spider-Man: No Way Home
+                           </h3>
+                           <time datetime="2021-02" class="name__date">
+                              Feb 2021
+                           </time>                 
+                        </div>
+                        <div class="item-films__raiting">
+                           4,7
+                        </div>
+                     </div>
+                  </div>
+                  <div class="popular-movies__item-films item-films">
+                     <div class="item-films__footer">
+                        <div class="item-films__play-button play-button play-button_small">
+                           <button class="play-button__click play-button__click_small play-button_spider-man">
+                              <img src="img/films/play.svg" alt="play">
+                           </button>
+                        </div>
+                        <div class="item-films__name name">
+                           <h3 class="name__title">
+                              Spider-Man: No Way Home
+                           </h3>
+                           <time datetime="2021-02" class="name__date">
+                              Feb 2021
+                           </time>                 
+                        </div>
+                        <div class="item-films__raiting">
+                           4,7
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- films__popular-movies -->
+
+         </section>
+      </main>
+      <!-- main -->
+
+   </div>
+   <!-- обертка для гридов -->
+
+   <!-- модалка -->
+   <div class="modal">
+      <div class="modal__inner">
+         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V0hagz_8L3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+   </div>
+   <!-- модалка -->
+
+   <!-- модалка бэтмен -->
+   <div class="modal-batman">
+      <div class="modal-batman__inner">
+         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g8Y_GL5h7Fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+   </div>
+   <!-- модалка бэтмен --->
+
+   <script src="js/script.js"></script>
+</body>
+</html>
